@@ -75,7 +75,7 @@ function out(date, text){
     fs.appendFileSync('./out/result_' + date + '.txt', text+'\n');
 }
 
-var interval = "*/2 * * * *";
+var interval = "*/3 * * * *";
 
 var job = new CronJob({
     cronTime:interval,
