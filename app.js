@@ -75,10 +75,10 @@ function out(date, text){
     fs.appendFileSync('./out/result_' + date + '.txt', text+'\n');
 }
 
-var time_1min = "*/1 * * * *";
+var interval = "*/2 * * * *";
 
 var job = new CronJob({
-    cronTime:time_1min,
+    cronTime:interval,
     onTick:single
 });
 
